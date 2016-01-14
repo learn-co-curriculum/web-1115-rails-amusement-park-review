@@ -1,0 +1,9 @@
+<%=@attraction.name%>
+  <%=@attraction.min_height%>
+  <%=@attraction.happiness_rating%>
+  <%=@attraction.tickets%>
+  <%=@attraction.nausea_rating%>
+
+  <%=form_for([@attraction, Ride.new]) do |f|%>
+    <%=f.submit "Go on this ride"%>
+  <%end%>

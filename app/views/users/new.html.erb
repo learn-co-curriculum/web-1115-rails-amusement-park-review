@@ -1,0 +1,20 @@
+<%=form_for @user do |f|%>
+  <%=f.label :name%>
+  <%=f.text_field :name%><br></br>
+
+  <%=f.label :height%>
+  <%=f.text_field :height%><br></br>
+
+  <%=f.label :happiness%>
+  <%=f.text_field :happiness%><br></br>
+
+  <%=f.label :nausea%>
+  <%=f.text_field :nausea%><br></br>
+
+  <%=f.label :tickets%>
+  <%=f.text_field :tickets%><br></br>
+
+  <%=f.label :admin, "check this box if you are an owner"%>
+  <%=f.check_box :admin%>
+  <%=f.submit "Create User"%>
+<%end%>
